@@ -18,7 +18,6 @@ body {
     color: var(--text-color);
 }
 
-/* Header ve Navigasyon */
 header {
     background-color: var(--primary-color);
     padding: 1rem 0;
@@ -46,7 +45,7 @@ nav a:hover {
     color: var(--secondary-color);
 }
 
-/* Ana Bölüm Stilleri */
+
 main {
     margin-top: 60px;
 }
@@ -59,7 +58,6 @@ section:nth-child(even) {
     background-color: var(--light-bg);
 }
 
-/* Hero Bölümü */
 .hero {
     text-align: center;
     padding: 8rem 2rem;
@@ -86,7 +84,6 @@ section:nth-child(even) {
     flex-wrap: wrap;
 }
 
-/* Projeler Bölümü */
 .proje-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -106,7 +103,7 @@ section:nth-child(even) {
     transform: translateY(-5px);
 }
 
-/* Yetenekler Bölümü */
+
 .skills ul {
     display: flex;
     flex-wrap: wrap;
@@ -122,33 +119,40 @@ section:nth-child(even) {
     list-style: none;
 }
 
-/* İletişim Formu */
 form {
-    max-width: 600px;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 15px;
+    max-width: 500px;
+    margin: 20px auto;
 }
 
 input, textarea {
-    padding: 1rem;
+    padding: 12px;
     border: 1px solid #ddd;
     border-radius: 4px;
+    font-size: 16px;
+}
+
+textarea {
+    min-height: 150px;
+    resize: vertical;
 }
 
 button {
-    background: var(--secondary-color);
+    padding: 12px 24px;
+    background-color: #2c3e50;
     color: white;
-    padding: 1rem;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    transition: var(--transition);
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
 }
 
 button:hover {
-    background: var(--primary-color);
+    background-color: #34495e;
 }
 
 /* Footer */
@@ -159,7 +163,6 @@ footer {
     padding: 2rem;
 }
 
-/* Responsive Tasarım */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
