@@ -89,13 +89,17 @@
 
         <section id="iletisim">
             <h2>İletişim</h2>
-            <form action="https://formsubmit.co/eypp_kvk13@outlook.com" method="POST">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_next" value="https://eyupkavakk.github.io/tesekkurler.html">
+            <form action="https://api.web3forms.com/submit" method="POST">
+
+                <input type="hidden" name="access_key" value="48c2cbcb-71ba-422c-84d1-360069549059">
+                
                 <input type="text" name="name" placeholder="İsminiz" required>
                 <input type="email" name="email" placeholder="Email Adresiniz" required>
                 <textarea name="message" placeholder="Mesajınız" required></textarea>
-                <button type="submit">Gönder</button>
+                
+                <button type="submit" id="submit-btn">
+                    <span>Gönder</span>
+                </button>
             </form>
         </section>
     </main>
